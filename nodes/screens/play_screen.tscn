@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dew48q0fdnch"]
+
+[ext_resource type="PackedScene" uid="uid://foq8i736qdfw" path="res://nodes/screens/screen.tscn" id="1_cp71h"]
+[ext_resource type="Script" path="res://nodes/screens/play_screen.gd" id="2_astnp"]
+
+[node name="PlayScreen" instance=ExtResource("1_cp71h")]
+script = ExtResource("2_astnp")
+game_scene = null
+
+[node name="Background" type="ColorRect" parent="." index="0"]
+layout_mode = 2
+color = Color(0.0980392, 0.901961, 1, 1)
+
+[node name="Center" type="CenterContainer" parent="." index="1"]
+layout_mode = 2
+
+[node name="Anchor" type="Control" parent="Center" index="0"]
+layout_mode = 2
