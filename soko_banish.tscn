@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://do74b5vbp5njk"]
+
+[sub_resource type="GDScript" id="GDScript_1nkq5"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	print(\"Soko Banish!!!\")
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="SokoBanish" type="Node2D"]
+script = SubResource("GDScript_1nkq5")
