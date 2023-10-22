@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="SokaBanish"
+config/name="SokoBanish"
 config/description="Attach level selection scene as \"game\" scene.
 Using custom resource \"GameLevel\".
 Buttons added by gdscript via adding \"GameLevel\" custom resource to the Levels arrary."
@@ -31,6 +31,7 @@ pointing/emulate_touch_from_mouse=true
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true

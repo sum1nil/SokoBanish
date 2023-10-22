@@ -1,8 +1,8 @@
 extends Node
 
 var  root = null
-var current_screen_node: GameScreen
 var current_screen : Types.screens
+var current_screen_node: GameScreen
 var is_changing_scene := false
 
 # Called when the node enters the scene tree for the first time.
@@ -20,11 +20,11 @@ func _process(delta: float) -> void:
 func change_screen(new_screen: Types.screens) -> void:
 	if is_changing_scene:
 		return
-	else:
-		is_changing_scene = true
 
-	var new_screen_node: GameScreen = Constants.screen_scenes[new_screen].instantiate()
+	is_changing_scene = true
 
+	var new_screen_node = Constants.screen_scenes[new_screen].instantiate()
+	# print(new_screen_node.type)
 	load_new_screen(new_screen_node, new_screen)
 
 func load_new_screen(new_screen_node: GameScreen, new_screen : Types.screens) -> void:

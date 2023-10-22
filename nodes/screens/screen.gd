@@ -1,2 +1,2 @@
-extends MarginContainer
-class_name GameScreen
+class_name GameScreen extends MarginContainer
+
